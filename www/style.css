@@ -1,0 +1,137 @@
+#intro-head {
+	text-align: center;
+}
+
+#yearInfo {
+	margin-left: 30px;
+	margin-top: 30px;"
+}
+
+#growth-year-logo {
+	float: left;
+}
+
+#growth-year-info {
+	margin-left: 220px;
+}
+
+.cell-name {
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+.cell-value {
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+#bubble-chart-title {
+	text-align: center;
+}
+
+#bubble-chart-subtitle {
+	text-align: center;
+	font-style: italic;
+}
+
+#medal-tally-title {
+	text-align: center;
+}
+
+#bubble-chart-legend {
+	text-align: left;
+}
+
+div#results-tally th,
+div#results-tally td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+th.results-gold {
+	color: #C98910;
+}
+th.results-silver {
+	color: #A8A8A8;
+}
+th.results-bronze {
+	color: #965A38;
+}
+
+tr.results-row:nth-child(even) {
+	background: #C0C0C0
+}
+tr.results-row:nth-child(odd) {
+	background: #DCDCDC
+}
+
+td.results-rank {
+	text-align: center;
+}
+
+td.results-gold,
+td.results-silver,
+td.results-bronze,
+td.results-total {
+	text-align: right;
+}
+
+td.results-total {
+	font-weight: bold;
+}
+
+#leaflet-map-title {
+	text-align: center;
+}
+
+#leaflet-map-subtitle {
+	text-align: center;
+	font-style: italic;
+}
+
+.map-container {
+	position: relative;
+}
+
+.loading-spinner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: -1;
+	margin-top: -128px;  /* half of the spinner's height */
+	margin-left: -128px; /* half of the spinner's width */
+}
+
+#country-profile-details {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+table#country-profile-table td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+td.country-profile-label {
+	text-align: left;
+}
+
+td.country-profile-value {
+	font-weight: bold;
+}
+
+#country-sports-bubbles-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.plot-note {
+	color: blue;
+	font-weight: bold;
+}
