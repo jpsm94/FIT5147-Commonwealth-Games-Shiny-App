@@ -1,5 +1,13 @@
 # ui.R
 
+##################################
+# JP Mariano
+# FIT5147 Data Exploration and Visualisation
+# Graduate Diploma of Data Science
+# Monash University
+##################################
+
+
 library(shiny)
 library(leaflet)
 library(bubbles)

@@ -1,5 +1,12 @@
 # server.R
 
+##################################
+# JP Mariano
+# FIT5147 Data Exploration and Visualisation
+# Graduate Diploma of Data Science
+# Monash University
+##################################
+
 library(shiny)
 library(ggplot2)
 library(leaflet)
@@ -44,7 +51,9 @@ getRegionColor <- function(df) {
 }
 
 # base url for flag images
-flagBaseUrl <- 'http://www.thecgf.com/media/flags/'
+#flagBaseUrl <- 'http://www.thecgf.com/media/flags/'
+# changed to local subdir under www
+flagBaseUrl <- 'flags/'
 
 
 shinyServer(function(input, output, session) {
@@ -229,7 +238,7 @@ shinyServer(function(input, output, session) {
                            tags$tr(class="results-row",
                                    tags$td(class="results-rank", i),
                                    tags$td(class="results-flag", 
-                                           img(src=paste0(flagBaseUrl, row[2], '.gif'),
+                                           img(src=paste0(flagBaseUrl, row[2], '.png'),
                                                alt=paste0(row[3], ' flag'))),
                                    tags$td(class="results-country", row[3]),
                                    tags$td(class="results-gold", row[7]),
@@ -426,7 +435,7 @@ shinyServer(function(input, output, session) {
   output$countryProfile <- renderUI({
     div(id="country-profile-details",
       img(id="country-profile-flag", 
-                 src=paste0(flagBaseUrl, country.misc.data()[['country.code']], '.gif'),
+                 src=paste0(flagBaseUrl, country.misc.data()[['country.code']], '.png'),
                  alt=paste0(input$countryNameInput, ' flag')),
       h1(id="country-profile-name", input$countryNameInput),
       tags$table(id="country-profile-table", border="1",
